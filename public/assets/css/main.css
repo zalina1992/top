@@ -14,6 +14,23 @@ ul li {
 h2, p {
   margin-bottom: 0;
 }
+.pagination .page-link {
+  color: #000;
+  background-color: #f9a600 !important; // złoty
+  border-color: #f9a600;
+
+  &:hover {
+    background-color: #d98d00 !important; // ciemniejszy złoty na hover
+    border-color: #d98d00;
+    color: #fff;
+  }
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #f9a600 !important;
+  border-color: #f9a600;
+  color: #fff;
+}
 
 h1,
 h2,

@@ -5,8 +5,14 @@ import { BlogSingleComponent } from './views/blog-single/blog-single.component';
 import { BlogSingle2Component } from './blog-single2/blog-single2.component';
 import { BlogSingle3Component } from './blog-single3/blog-single3.component';
 import { BlogSingle4Component } from './blog-single4/blog-single4.component';
+import { BlogSingle5Component } from './blog-single5/blog-single5.component';
 
 export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
   {
     path: '',
     component: LayoutComponent,
@@ -33,5 +39,9 @@ export const routes: Routes = [
   {
     path: 'seo-norge-2025',
     component: BlogSingle4Component,
+  },
+  {
+    path: 'seo-sokemotoroptimalisering-effektivt',
+    component: BlogSingle5Component,
   }
 ];
