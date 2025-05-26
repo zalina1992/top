@@ -135,17 +135,7 @@ export class SidebarComponent {
   changePage(page: number) {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
-
-      const blogSection = document.getElementById('list-item-7');
-      if (blogSection) {
-        const rect = blogSection.getBoundingClientRect();
-        const isAbove = rect.bottom < 0;
-        const isBelow = rect.top > window.innerHeight;
-
-        if (isAbove || isBelow) {
-          blogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
+      // Nie przewijaj do żadnej sekcji – po prostu załaduj nowe posty.
     }
   }
 }
