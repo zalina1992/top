@@ -2738,8 +2738,17 @@ body.light-mode .themed-text {
   display: inline-block;
   transition: all 0.4s;
   border: 1px solid var(--ztc-border-border-3);
-  margin: 0 12px 0 0;
+  margin: 0 
+  12px 0 0;
 }
+body {
+  background-image: url('assets/img/all-images/bg/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .parallaxie {
   background-image: url('/assets/img/all-images/bg/bg1.png');
   background-size: cover;
