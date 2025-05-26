@@ -1,0 +1,85 @@
+<div class="header-site-icon">
+  
+  
+  <div class="slide-bar slide-bar1" [class.show]="isSidebarVisible">
+      <div class="sidebar-info">
+          <div class="sidebar-logo">
+              <a href="index.html">
+                  <img src="assets/img/logo/logo1.png" alt="logo" id="siteLogo">
+              </a>
+              <div class="close-mobile-menu" (click)="closeSidebar()">
+                  <a><i class="fa-solid fa-xmark"></i></a>
+              </div>
+          </div>
+          <div class="sidebar-content">
+              <ul>
+                  <li><a [ngClass]="{ active: currentSection === 'list-item-1' }" [ngxScrollTo]="'#list-item-1'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-1')"> Hjem</a></li>
+                  <li> <a [ngxScrollTo]="'#list-item-2'" [ngClass]="{ active: currentSection === 'list-item-2' }"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-2')">Om oss</a></li>
+                  <li> <a [ngClass]="{ active: currentSection === 'list-item-3' }" [ngxScrollTo]="'#list-item-3'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-3')">Tjenester</a></li>
+                  <li> <a [ngClass]="{ active: currentSection === 'list-item-4' }" [ngxScrollTo]="'#list-item-4'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-4')">Fordeler</a></li>
+                  <li> <a [ngClass]="{ active: currentSection === 'list-item-5' }" [ngxScrollTo]="'#list-item-5'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-5')">Google Rangering-live</a></li>
+                  <li> <a [ngClass]="{ active: currentSection === 'list-item-6' }" [ngxScrollTo]="'#list-item-6'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-6')">Referanser</a></li>
+                  <li><a [ngClass]="{ active: currentSection === 'list-item-7' }" [ngxScrollTo]="'#list-item-7'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-7')">Blogg</a></li>
+                  <li> <a [ngClass]="{ active: currentSection === 'https://vellykket.no/index#kontakt' }" [ngxScrollTo]="'#list-item-8'"
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-8')">Kontakt</a></li>
+              </ul>
+          </div>
+          <div class="space32"></div>
+          <div class="space16"></div>
+          
+          
+          <div class="social-link-area">
+              <h3 class="sidebar-heading">Sosiale medier</h3>
+              <ul>
+                  <li>
+                      <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com/vellykket_seo/"><i class="fa-brands fa-instagram"></i></a>
+                    
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+<header>
+  <div class="header-area homepage1 header header-sticky " id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-elements">
+            <div class="site-logo">
+              <a routerLink="/"><img src="assets/img/logo/logo1.png" alt=""></a>
+            </div>
+            <div class="btn-area d-lg-flex">
+              <div class="theme-toggle-container">
+                <label class="theme-switch">
+                  <input type="checkbox" type="checkbox" [checked]="isLightMode" (change)="toggleTheme($event)"
+                    id="theme-toggle" id="theme-toggle">
+                  <span class="slider">
+                    <i class="fas fa-moon icon moon-icon"></i>
+                    <i class="fas fa-sun icon sun-icon"></i>
+                    <span class="explosion"></span> <!-- 🔥 Dodane -->
+                  </span>
+                </label>
+              </div>
+              <a class="vl-btn1"
+   [ngxScrollTo]="'#list-item-8'"
+   href="javascript:void(0);"
+   (click)="setActiveLink('list-item-8')">
+  KONTAKT <span><img src="assets/img/icons/mail1.svg" alt=""></span>
+</a>
+              <button (click)="toggleSidebar()" class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

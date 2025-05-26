@@ -1,0 +1,934 @@
+
+<div [ngClass]="classManager.getClass()" class="parallaxie">
+    <router-outlet />
+    <div class="space32"></div>
+    <div class="space32"></div>
+    <div class="space32"></div>
+    <div class="space32"></div>
+    <div class="space32"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="personal-contact-box" data-aos="fade-right" data-aos-duration="1000">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-1' }" [ngxScrollTo]="'#list-item-1'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-1')">
+                            <img src="assets/img/icons/home1.svg" alt="" />
+                            <span>Hjem</span> 
+                        </a>
+                        <a class="list-group-item list-group-item-action" [ngxScrollTo]="'#list-item-2'"
+                            [ngClass]="{ active: currentSection === 'list-item-2' }" href="javascript:void(0);"
+                            (click)="setActiveLink('list-item-2')">
+                            <img src="assets/img/icons/home2.svg" alt="" />  
+                            <span>Om oss</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-3' }" [ngxScrollTo]="'#list-item-3'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-3')">
+                            <img src="assets/img/icons/home3.svg" alt="" />
+                            <span>Tjenester</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-4' }" [ngxScrollTo]="'#list-item-4'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-4')">
+                            <img src="assets/img/icons/home4.svg" alt="" />
+                            <span>Fordeler</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-5' }" [ngxScrollTo]="'#list-item-5'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-5')">
+                            <img src="assets/img/icons/home5.svg" alt="" />
+                            <span>Hva får du?</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-6' }" [ngxScrollTo]="'#list-item-6'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-6')">
+                            <img src="assets/img/icons/home6.svg" alt="" />
+                            <span>Referanser</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action"
+                            [ngClass]="{ active: currentSection === 'list-item-7' }" [ngxScrollTo]="'#list-item-7'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-7')">
+                            <img src="assets/img/icons/home8.svg" alt="" />
+                            <span>Blogg</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action m-0"
+                            [ngClass]="{ active: currentSection === 'list-item-8' }" [ngxScrollTo]="'list-item-8'"
+                            href="javascript:void(0);" (click)="setActiveLink('list-item-8')">
+                            <img src="assets/img/icons/home7.svg" alt="" />
+                            <span>Kontakt</span>
+                        </a>
+                        
+                    </div> 
+                    <div class="img1 image-anime reveal" appGsapReveal>
+                        <img src="assets/img/all-images/hero/screen-01.gif" alt="">
+                    </div>
+                    <div class="space18"></div>
+                    <h3>Abonner og bli Vellykket!</h3>
+                    <div class="space16"></div>
+                    <p>Vi hjelper deg å vokse digitalt.<br>Med målrettet SEO plasserer vi deg foran konkurrentene og skaper resultater som varer.
+                        <br>Flere kunder. Mer synlighet. Stabil vekst.
+                        <br>Bli Vellykket sammen med oss.                        
+                        </p>
+                    <div class="space32"></div>
+                
+                    <div class="btn-area1 text-center">
+                        <a href="https://vellykket.no/abonner/" target="_blank" class="vl-btn1">Abonner nå </a>
+                    </div>
+                    <div class="space32"></div>
+                    <p>Fra 2990kr per måned</p>
+                    <p>Din Vellykket-reise starter nå</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                    class="scrollspy-example" tabindex="0">
+                    <!--===== HERO AREA STARTS =======-->
+                   
+                    <div id="list-item-1">
+                        <div class="hero-heading-area heading1">
+                            <h5 data-aos="fade-left" data-aos-duration="800"><img src="assets/img/icons/sublogo1.svg"
+                                    alt="">Øk synligheten </h5>
+                            <div class="space24"></div>
+                            <h1 data-aos="fade-left" data-aos-duration="900">Vellykket synlighet. </h1>
+                            <div class="space24"></div>
+                            <h1 class="head" data-aos="fade-left" data-aos-duration="1000">Vellykket vekst.
+                                <span><br>Vellykket fremtid.</span>
+                            </h1>
+                            <div class="space24"></div>
+                            <p data-aos="fade-left" data-aos-duration="1100">Ved å rangere høyere i Google, kan du tiltrekke deg flere kunder og øke salget.
+                                Vi hjelper deg med å analysere, optimalisere og forbedre nettsiden din slik at den blir synlig for riktig målgruppe.</p>
+                            <div class="arrow" data-aos="fade-left" data-aos-duration="1200">
+                                <a href="javascript:void(0);" class="magnetic">
+                                    <img src="assets/img/elements/elements1.png" alt="" class="elements1 keyframe5">
+                                    <img src="assets/img/icons/arrow1.svg" alt="" class="arrow1">
+                                </a>
+
+                                <div class="images">
+                                    <img src="assets/img/all-images/others/others1.png" alt="">
+                                    <p>100+ omtaler <br> (4.90 av 5)</p>
+                                </div>
+                            </div>
+                            <div class="space32"></div>
+                            <div class="main-btn-area" data-aos="fade-up" data-aos-duration="1200">
+                                <a href="https://vellykket.no/seo/index.php">Google-rangering live <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===== HERO AREA ENDS =======-->
+                    <div class="space50"></div>
+                    <div id="list-item-2">
+                        <!--===== ABOUT AREA STARTS =======-->
+                        <div class="about-section-area">
+                            <div class="heading1">
+                                <h5 data-aos="fade-left" data-aos-duration="800"><img
+                                        src="assets/img/icons/sublogo1.svg" alt="">Om oss</h5>
+                                <div class="space24"></div>
+                                <h1 data-aos="fade-left" data-aos-duration="1000">Vi skaper vekst</h1>
+                                <div class="space24"></div>
+                                <h1 class="head" data-aos="fade-left" data-aos-duration="1100">basert på
+                                    <span><br>14 års erfaring</span>
+                                </h1> 
+                                <div class="space40"></div>
+
+
+                                
+                                <div class="row">
+                                    <!-- Box 1 -->
+                                    <div class="col-md-6 d-flex justify-content-center mb-4" data-aos="fade-up" data-aos-duration="1100">
+                                      <div class="team-box hover-shadow rounded p-3 text-center" style="transition: all 0.3s ease-in-out; max-width: 420px;">
+                                        <div class="img-area mb-3">
+                                          <img src="assets/img/all-images/team/4.jpg" alt="Adrian Zalinski"
+                                               style="width: 100%; border-radius: 10px; max-width: 400px; height: 500px; object-fit: cover; border: 1px solid #f9a600;">
+                                        </div> 
+                                        <div class="glass-text-box">
+                                          <h5 data-aos="fade-left" data-aos-duration="1000">Adrian Zalinski</h5>
+                                          <h5 data-aos="fade-left" data-aos-duration="1000">SEO Specialist</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <!-- Box 2 -->
+                                    <div class="col-md-6 d-flex justify-content-center mb-4" data-aos="fade-up" data-aos-duration="1100">
+                                      <div class="team-box hover-shadow rounded p-3 text-center" style="transition: all 0.3s ease-in-out; max-width: 420px;">
+                                        <div class="img-area mb-3">
+                                          <img src="assets/img/all-images/team/5.jpg" alt="Søren Piekarzewicz"
+                                               style="width: 100%; max-width: 400px; border-radius: 10px; height: 500px; object-fit: cover; border: 1px solid #f9a600;">
+                                        </div>
+                                        <div class="glass-text-box">
+                                          <h5 data-aos="fade-left" data-aos-duration="1000">Søren Piekarzewicz</h5>
+                                          <h5 data-aos="fade-left" data-aos-duration="1000">Spesialist | Annonsering Netthandel</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                     <!-- Box 3 -->
+                                     <div class="col-md-6 d-flex justify-content-center mb-4" data-aos="fade-up" data-aos-duration="1100">
+                                        <div class="team-box hover-shadow rounded p-3 text-center" style="transition: all 0.3s ease-in-out; max-width: 420px;">
+                                          <div class="img-area mb-3">
+                                            <img src="assets/img/all-images/team/6.jpg" alt="Adrian Zalinski"
+                                                 style="width: 100%; border-radius: 10px; max-width: 400px; height: 500px; object-fit: cover; border: 1px solid #f9a600;">
+                                          </div> 
+                                          <div class="glass-text-box">
+                                            <h5 data-aos="fade-left" data-aos-duration="1000">Jonathan Anderst</h5>
+                                            <h5 data-aos="fade-left" data-aos-duration="1000">Markedssjef</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                  
+                                  
+  
+
+<div class="space40"></div>
+
+                            </div>
+                            <div class="space60"></div>
+                            <div class="about-boxarea">
+                                <div class="row">
+                                    <div class="col-lg-12" data-aos="fade-left" data-aos-duration="1200">
+                                        <div class="about-main-boxes">
+                                            <h4>Tiltakene som faktisk forbedrer din rangering i søk</h4>
+                                            <div class="space24"></div>
+                                            <p>Effektiv SEO handler om mer enn bare nøkkelord.
+                                                For å oppnå varige resultater kreves en helhetlig tilnærming som kombinerer mange faktorer.
+                                                Teknisk optimalisering, relevant innhold, brukeropplevelse, hastighet på nettsiden og kvalitetslenker – alt spiller en viktig rolle.
+                                                En vellykket SEO-strategi balanserer disse elementene for å styrke synligheten og rangeringen din i søkemotorene.
+                                                Hos oss får du en skreddersydd løsning som tar hensyn til alle aspektene som påvirker din digitale suksess.
+                                                La oss hjelpe deg med å bygge en sterk, synlig og konkurransedyktig nettside.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="900">
+                                        <div class="about-boxes2">
+                                            <img src="assets/img/icons/home2.svg" alt="">
+                                            <div class="content-area">
+                                                <h4>Live oversikt over rangeringene dine</h4>
+                                                <div class="space16"></div>
+                                                <p>Du får tilgang til et eget kontrollpanel der du kan følge dine søkeordsposisjoner i sanntid – når som helst.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="about-boxes2">
+                                            <img src="assets/img/icons/home3.svg" alt="">
+                                            <div class="content-area">
+                                                <h4>Fast månedlig optimalisering – betal ekstra kun for resultater</h4>
+                                                <div class="space16"></div>
+                                                <p>Du får kontinuerlig SEO-optimalisering til fast pris hver måned. Ekstra gebyrer gjelder først når nøkkelordene dine når topp 10 i Google – målbar fremgang gir merverdi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1100">
+                                        <div class="about-boxes2">
+                                            <img src="assets/img/icons/home4.svg" alt="">
+                                            <div class="content-area">
+                                                <h4>Én samlet faktura i måneden</h4>
+                                                <div class="space16"></div>
+                                                <p>Enkel og oversiktlig fakturering én gang i måneden – uten skjulte kostnader. Tjenesten har 6 måneders bindingstid.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="about-boxes2">
+                                            <img src="assets/img/icons/home5.svg" alt="">
+                                            <div class="content-area">
+                                                <h4>Skreddersydd SEO for din bedrift</h4>
+                                                <div class="space16"></div>
+                                                <p>Vi lager en strategi som passer akkurat dine mål, bransje og budsjett – ingen standardløsninger.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="soace20"></div>
+                                   
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== ABOUT AREA ENDS =======-->
+                    </div>
+
+                    <div id="list-item-3">
+                        <!--===== SERVICE AREA STARTS =======-->
+                        <div class="service-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="service-header heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="800"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="">Priser</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Full oversikt – </h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1100">Ingen skjulte
+                                                <span>Kostnader</span>
+                                            </h2>
+                                            <div class="space50"></div>
+                                            <div class="div" data-aos="fade-left" data-aos-duration="900">
+                                                <div class="service-main-boxes">
+                                                    <h4>Topp 1–3:</h4>
+                                                    <div class="space24"></div>
+                                                    <p>Høyeste rangering gir maksimal synlighet – høyeste sats per søkeord.<br>Fra 400 kr/mnd per søkeord, basert på konkurranse.</p>
+                                                </div>
+                                            </div>
+                                            <div class="space30"></div>
+                                            <div class="div" data-aos="fade-left" data-aos-duration="1000">
+                                                <div class="service-main-boxes">
+                                                    <h4>Topp 4–7:</h4>
+                                                    <div class="space24"></div>
+                                                    <p>God plassering med solid trafikk – middels sats per søkeord.<br>Fra 300 kr/mnd per søkeord, basert på konkurranse.</p>
+                                                </div>
+                                            </div>
+                                            <div class="space30"></div>
+                                            <div class="div" data-aos="fade-left" data-aos-duration="1100">
+                                                <div class="service-main-boxes">
+                                                    <h4>Topp 8–10:</h4>
+                                                    <div class="space24"></div>
+                                                    <p>Synlig på førstesiden – lav sats per søkeord.<br>Fra 200 kr/mnd per søkeord, basert på konkurranse.</p>
+                                                </div>
+                                            </div>
+                                            <div class="space30"></div>
+                                            <div class="div" data-aos="fade-left" data-aos-duration="1200">
+                                                <div class="service-main-boxes">
+                                                    <h4>Utenfor topp 10: Ingen resultatgebyr</h4>
+                                                    <div class="space24"></div>
+                                                    <p>Du betaler en fast månedspris fra 2 990 kr for kontinuerlig optimalisering. Så lenge søkeordene dine er utenfor topp 10 i Google, påløper ingen ekstra resultatgebyr.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== SERVICE AREA ENDS =======-->
+                    </div>
+                    <div class="space50"></div>
+                    <div id="list-item-4">
+                        <!--===== SKILL AREA STARTS =======-->
+                        <div class="skill-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-gl-12">
+                                        <div class="skill-header heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="800"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="" class="Wordpress">Fordeler</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Hvilke fordeler  </h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1100">får du med
+                                                <span>SEO?</span>
+                                            </h2>
+                                        </div>
+                                        <div class="space80"></div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="900">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/eye1.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                   
+                                                    <div class="space16"></div>
+                                                    <p>Synlighet</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/traffic2.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                   
+                                                    <div class="space16"></div>
+                                                    <p>Trafikk</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1100">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/kunder3.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                    
+                                                    <div class="space16"></div>
+                                                    <p>Kunder</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1200">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/results4.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                    
+                                                    <div class="space16"></div>
+                                                    <p>Resultater</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/trust5.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                    
+                                                    <div class="space16"></div>
+                                                    <p>Troverdighet</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6" data-aos="zoom-out"
+                                                data-aos-duration="11000">
+                                                <div class="skill-boxarea">
+                                                    <div class="icons">
+                                                        <img src="assets/img/icons/growth6.png" alt="" class="Wordpress">
+                                                    </div>
+                                                    <div class="space24"></div>
+                                                    
+                                                    <div class="space16"></div>
+                                                    <p>Vekst</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== SKILL AREA ENDS =======-->
+                    </div>
+                    <div class="space30"></div>
+                    <div id="list-item-5">
+                        <!--===== PORTFOLIO AREA STARTS =======-->
+                        <div class="portfolio-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="portfolio-header heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="800"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="">Google Rangering-live</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Full oversikt </h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1100">Med eget
+                                                <span>Overvåkningspanel</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="space50"></div>
+                                    <div class="col-lg-12" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="portfolio-boxarea click-here" (click)="openModel()">
+                                            <div class="img1">
+                                                <a href="javascript:void(0)">
+                                                    <img src="assets/img/all-images/portfolio/portfolio-img1.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="space24"></div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+
+                                
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== PORTFOLIO AREA ENDS =======-->
+                    </div>
+                    <div class="space30"></div>
+                    <div id="list-item-6">
+                        <!--===== TESTIMONIAL AREA STARTS =======-->
+                        <div class="testimonial-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="testimonial-header heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="900"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="">Referanser</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Slik våre </h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1100">kunder <span>ser det</span></h2>
+                                        </div>
+                                        <div class="space60"></div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6" data-aos="zoom-in" data-aos-duration="900">
+                                        <div class="testimonial-boxarea">
+                                            <div class="list">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                                                    viewBox="0 0 24 20" fill="none">
+                                                    <path
+                                                        d="M13.077 4.99278C13.077 6.16612 13.3836 7.15145 13.997 7.94878C14.4316 8.49812 15.0214 8.859 15.7663 9.03145C16.4996 9.20212 17.193 9.21412 17.8196 9.06878C18.033 10.3354 17.6863 11.6768 16.8063 13.0981C15.9245 14.5186 14.7876 15.5866 13.3956 16.3021L15.5036 19.3354C16.5703 18.8074 17.5836 18.1381 18.517 17.3288C19.4636 16.5194 20.3036 15.5888 21.0503 14.5368C21.797 13.4848 22.357 12.2968 22.717 10.9501C23.077 9.60345 23.177 8.23012 23.005 6.81678C22.781 4.95012 22.1783 3.45678 21.197 2.35011C20.2165 1.22923 18.9952 0.668781 17.533 0.668781C16.2463 0.668781 15.1783 1.05545 14.333 1.83945C13.4965 2.60745 13.0787 3.65989 13.0796 4.99678L13.077 4.99278ZM0.911625 4.99278C0.911625 6.16612 1.21829 7.15145 1.83162 7.94878C2.26718 8.50878 2.85696 8.87189 3.60096 9.03812C4.34763 9.20256 5.03207 9.21234 5.65429 9.06745C5.86762 10.3208 5.53429 11.6674 4.65162 13.0941C3.77163 14.5074 2.63563 15.5741 1.24363 16.2941L3.34629 19.3354C4.41385 18.8074 5.41829 18.1386 6.35962 17.3288C7.31482 16.5074 8.16322 15.5694 8.88496 14.5368C9.62629 13.4834 10.1783 12.2968 10.5383 10.9501C10.904 9.6045 11.0023 8.20023 10.8276 6.81678C10.6063 4.95012 10.0063 3.45678 9.02762 2.35011C8.04985 1.23723 6.83074 0.680782 5.37029 0.680782C4.0814 0.679005 3.01385 1.06878 2.16762 1.85011C1.33118 2.61811 0.912514 3.67056 0.911625 5.00745V4.99278Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="space20"></div>
+                                            <p>"Takket være SEO-arbeidet vi fikk utført, har vi nå en mye høyere synlighet i søkeresultatene. Det har hatt direkte innvirkning på salget vårt. Vi er svært imponert over profesjonaliteten og resultatene."</p>
+                                            <div class="space24"></div>
+                                            <div class="mans-area">
+                                                <div class="man">
+                                                    <img src="assets/img/all-images/testimonials/tesi-img1.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0);">Thomas E.</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                                        <div class="testimonial-boxarea">
+                                            <div class="list">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                                                    viewBox="0 0 24 20" fill="none">
+                                                    <path
+                                                        d="M13.077 4.99278C13.077 6.16612 13.3836 7.15145 13.997 7.94878C14.4316 8.49812 15.0214 8.859 15.7663 9.03145C16.4996 9.20212 17.193 9.21412 17.8196 9.06878C18.033 10.3354 17.6863 11.6768 16.8063 13.0981C15.9245 14.5186 14.7876 15.5866 13.3956 16.3021L15.5036 19.3354C16.5703 18.8074 17.5836 18.1381 18.517 17.3288C19.4636 16.5194 20.3036 15.5888 21.0503 14.5368C21.797 13.4848 22.357 12.2968 22.717 10.9501C23.077 9.60345 23.177 8.23012 23.005 6.81678C22.781 4.95012 22.1783 3.45678 21.197 2.35011C20.2165 1.22923 18.9952 0.668781 17.533 0.668781C16.2463 0.668781 15.1783 1.05545 14.333 1.83945C13.4965 2.60745 13.0787 3.65989 13.0796 4.99678L13.077 4.99278ZM0.911625 4.99278C0.911625 6.16612 1.21829 7.15145 1.83162 7.94878C2.26718 8.50878 2.85696 8.87189 3.60096 9.03812C4.34763 9.20256 5.03207 9.21234 5.65429 9.06745C5.86762 10.3208 5.53429 11.6674 4.65162 13.0941C3.77163 14.5074 2.63563 15.5741 1.24363 16.2941L3.34629 19.3354C4.41385 18.8074 5.41829 18.1386 6.35962 17.3288C7.31482 16.5074 8.16322 15.5694 8.88496 14.5368C9.62629 13.4834 10.1783 12.2968 10.5383 10.9501C10.904 9.6045 11.0023 8.20023 10.8276 6.81678C10.6063 4.95012 10.0063 3.45678 9.02762 2.35011C8.04985 1.23723 6.83074 0.680782 5.37029 0.680782C4.0814 0.679005 3.01385 1.06878 2.16762 1.85011C1.33118 2.61811 0.912514 3.67056 0.911625 5.00745V4.99278Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="space20"></div>
+                                            <p>"Fantastisk service og enda bedre resultater. Etter SEO-optimaliseringen ble det tydelig at flere fant oss på nett, og vi fikk langt flere henvendelser. Anbefales på det sterkeste!"</p>
+                                            <div class="space24"></div>
+                                            <div class="mans-area">
+                                                <div class="man">
+                                                    <img src="assets/img/all-images/testimonials/tesi-img2.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0);">Daniel S.</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-duration="1100">
+                                        <div class="testimonial-boxarea">
+                                            <div class="list">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                                                    viewBox="0 0 24 20" fill="none">
+                                                    <path
+                                                        d="M13.077 4.99278C13.077 6.16612 13.3836 7.15145 13.997 7.94878C14.4316 8.49812 15.0214 8.859 15.7663 9.03145C16.4996 9.20212 17.193 9.21412 17.8196 9.06878C18.033 10.3354 17.6863 11.6768 16.8063 13.0981C15.9245 14.5186 14.7876 15.5866 13.3956 16.3021L15.5036 19.3354C16.5703 18.8074 17.5836 18.1381 18.517 17.3288C19.4636 16.5194 20.3036 15.5888 21.0503 14.5368C21.797 13.4848 22.357 12.2968 22.717 10.9501C23.077 9.60345 23.177 8.23012 23.005 6.81678C22.781 4.95012 22.1783 3.45678 21.197 2.35011C20.2165 1.22923 18.9952 0.668781 17.533 0.668781C16.2463 0.668781 15.1783 1.05545 14.333 1.83945C13.4965 2.60745 13.0787 3.65989 13.0796 4.99678L13.077 4.99278ZM0.911625 4.99278C0.911625 6.16612 1.21829 7.15145 1.83162 7.94878C2.26718 8.50878 2.85696 8.87189 3.60096 9.03812C4.34763 9.20256 5.03207 9.21234 5.65429 9.06745C5.86762 10.3208 5.53429 11.6674 4.65162 13.0941C3.77163 14.5074 2.63563 15.5741 1.24363 16.2941L3.34629 19.3354C4.41385 18.8074 5.41829 18.1386 6.35962 17.3288C7.31482 16.5074 8.16322 15.5694 8.88496 14.5368C9.62629 13.4834 10.1783 12.2968 10.5383 10.9501C10.904 9.6045 11.0023 8.20023 10.8276 6.81678C10.6063 4.95012 10.0063 3.45678 9.02762 2.35011C8.04985 1.23723 6.83074 0.680782 5.37029 0.680782C4.0814 0.679005 3.01385 1.06878 2.16762 1.85011C1.33118 2.61811 0.912514 3.67056 0.911625 5.00745V4.99278Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="space20"></div>
+                                            <p>"Etter at vi begynte å jobbe med SEO-teamet, har vi endelig fått gjennomslag digitalt. Synligheten vår har økt dramatisk, og nettsiden tiltrekker seg flere kunder enn noen gang. Jeg kunne ikke vært mer fornøyd!"</p>
+                                            <div class="space24"></div>
+                                            <div class="mans-area">
+                                                <div class="man">
+                                                    <img src="assets/img/all-images/testimonials/tesi-img3.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0);">Camilla L.</a>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+                                        <div class="testimonial-boxarea">
+                                            <div class="list">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                                                    viewBox="0 0 24 20" fill="none">
+                                                    <path
+                                                        d="M13.077 4.99278C13.077 6.16612 13.3836 7.15145 13.997 7.94878C14.4316 8.49812 15.0214 8.859 15.7663 9.03145C16.4996 9.20212 17.193 9.21412 17.8196 9.06878C18.033 10.3354 17.6863 11.6768 16.8063 13.0981C15.9245 14.5186 14.7876 15.5866 13.3956 16.3021L15.5036 19.3354C16.5703 18.8074 17.5836 18.1381 18.517 17.3288C19.4636 16.5194 20.3036 15.5888 21.0503 14.5368C21.797 13.4848 22.357 12.2968 22.717 10.9501C23.077 9.60345 23.177 8.23012 23.005 6.81678C22.781 4.95012 22.1783 3.45678 21.197 2.35011C20.2165 1.22923 18.9952 0.668781 17.533 0.668781C16.2463 0.668781 15.1783 1.05545 14.333 1.83945C13.4965 2.60745 13.0787 3.65989 13.0796 4.99678L13.077 4.99278ZM0.911625 4.99278C0.911625 6.16612 1.21829 7.15145 1.83162 7.94878C2.26718 8.50878 2.85696 8.87189 3.60096 9.03812C4.34763 9.20256 5.03207 9.21234 5.65429 9.06745C5.86762 10.3208 5.53429 11.6674 4.65162 13.0941C3.77163 14.5074 2.63563 15.5741 1.24363 16.2941L3.34629 19.3354C4.41385 18.8074 5.41829 18.1386 6.35962 17.3288C7.31482 16.5074 8.16322 15.5694 8.88496 14.5368C9.62629 13.4834 10.1783 12.2968 10.5383 10.9501C10.904 9.6045 11.0023 8.20023 10.8276 6.81678C10.6063 4.95012 10.0063 3.45678 9.02762 2.35011C8.04985 1.23723 6.83074 0.680782 5.37029 0.680782C4.0814 0.679005 3.01385 1.06878 2.16762 1.85011C1.33118 2.61811 0.912514 3.67056 0.911625 5.00745V4.99278Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="space20"></div>
+                                            <p>"Jeg hadde aldri trodd at små justeringer kunne gjøre så stor forskjell. Etter SEO-optimaliseringen har nettsiden vår fått bedre plasseringer, og vi ser en jevn økning i organisk trafikk. Helt suverent arbeid!"</p>
+                                            <div class="space24"></div>
+                                            <div class="mans-area">
+                                                <div class="man">
+                                                    <img src="assets/img/all-images/testimonials/tesi-img4.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <a href="javascript:void(0);">Martin K.</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== TESTIMONIAL AREA ENDS =======-->
+                    </div>
+                    <div class="space30"></div>
+                    <div id="list-item-7">
+                        <!--===== BLOG AREA STARTS =======-->
+                        <div class="blog-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="blog-header heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="900"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="">Blogg</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Slik lykkes </h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1200">du med
+                                                <span>SEO i 2025</span>
+                                            </h2>
+                                            <div class="space60"></div>
+                                            <div class="row">
+                                            <!-- ✅ BLOG POST #1 -->
+<div class="col-lg-6 col-md-6">
+    <div class="blog-boxarea">
+      <div class="img1 reveal" appGsapReveal>
+        <a routerLink="/sokemotoroptimalisering-effektivt-seo-oslo">
+          <img src="assets/img/all-images/blog/blog-img1.png" alt="">
+        </a>
+      </div>
+      <div class="content-area">
+        <ul>
+          <li><a href="javascript:void(0);">SEO-tips</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 3 min lesing</a></li>
+        </ul>
+        <div class="space16"></div>
+        <a routerLink="/sokemotoroptimalisering-effektivt-seo-oslo">5 enkle SEO-tiltak for en nettside av høy kvalitet</a>
+        <div class="space16"></div>
+        <ul>
+          <li><a href="javascript:void(0);">
+            <img src="assets/img/all-images/blog/blog-img5.png" alt="">Vellykket Team</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 12, 2025</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ✅ BLOG POST #2 (ZMIENIONY) -->
+  <div class="col-lg-6 col-md-6">
+    <div class="blog-boxarea">
+      <div class="img1 reveal" appGsapReveal>
+        <a routerLink="/seo-nettside-for-bedrifter">
+          <img src="assets/img/all-images/blog/blog-img2.png" alt="">
+        </a>
+      </div>
+      <div class="content-area">
+        <ul>
+          <li><a href="javascript:void(0);">Søkemotoroptimalisering</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 4 min lesing</a></li>
+        </ul>
+        <div class="space16"></div>
+        <a routerLink="/seo-nettside-for-bedrifter">Hvordan bruke søkeord effektivt i 2025</a>
+        <div class="space16"></div>
+        <ul>
+          <li><a href="javascript:void(0);">
+            <img src="assets/img/all-images/blog/blog-img5.png" alt="">Vellykket Team</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 20, 2025</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+    <!-- ✅ BLOG POST #3 (ZMIENIONY) -->
+    <div class="col-lg-6 col-md-6">
+        <div class="blog-boxarea">
+          <div class="img1 reveal" appGsapReveal>
+            <a routerLink="/hvordan-bruke-sokeord-i-2025">
+              <img src="assets/img/all-images/blog/blog-img9.jpg" alt="">
+            </a>
+          </div>
+          <div class="content-area">
+            <ul>
+              <li><a href="javascript:void(0);">Effektivt SEO</a></li>
+              <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 4 min lesing</a></li>
+            </ul>
+            <div class="space16"></div>
+            <a routerLink="/hvordan-bruke-sokeord-i-2025">Nettside søkemotoroptimalisering – slik blir du synlig på Google</a>
+            <div class="space16"></div>
+            <ul>
+              <li><a href="javascript:void(0);">
+                <img src="assets/img/all-images/blog/blog-img5.png" alt="">Vellykket Team</a></li>
+              <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 14, 2025</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+     <!-- ✅ BLOG POST #4 (SEO ARTIKKEL) -->
+<div class="col-lg-6 col-md-6">
+    <div class="blog-boxarea">
+      <div class="img1 reveal" appGsapReveal>
+        <a routerLink="/seo-norge-2025">
+          <img src="assets/img/all-images/blog/enkelt-seo.png" alt="SEO i Norge – Bli synlig i Google 2025">
+        </a>
+      </div>
+      <div class="content-area">
+        <ul>
+          <li><a href="javascript:void(0);">Søkemotoroptimalisering</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 6 min lesing</a></li>
+        </ul>
+        <div class="space16"></div>
+        <a routerLink="/seo-norge-2025">SEO i Norge 2025 – Slik blir du synlig i Google</a>
+        <div class="space16"></div>
+        <ul>
+          <li><a href="javascript:void(0);">
+            <img src="assets/img/all-images/blog/blog-img5.png" alt="Vellykket SEO Team">Vellykket Team</a>
+          </li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 24, 2025</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  
+  
+  <div class="space30"></div>
+  <div class="pagination-area">
+      <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+              <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);" aria-label="Previous">
+                      <i class="fa-solid fa-angle-left"></i>
+                  </a>
+              </li>
+              <li class="page-item"><a class="page-link active"
+                      href="javascript:void(0);">1</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+              </li>
+            
+              <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);" aria-label="Next">
+                      <i class="fa-solid fa-angle-right"></i>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+
+
+  
+
+                                               
+
+                                                
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== BLOG AREA ENDS =======-->
+                    </div>
+                    <div class="space60"></div>
+                    <div id="list-item-8">
+                        <!--===== CONTACT AREA STARTS =======-->
+                        <div class="contact-section-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="contact-heading heading1">
+                                            <h5 data-aos="fade-left" data-aos-duration="900"><img
+                                                    src="assets/img/icons/sublogo1.svg" alt="">Kontakt</h5>
+                                            <div class="space24"></div>
+                                            <h2 data-aos="fade-left" data-aos-duration="1000">Har du en idé?</h2>
+                                            <div class="space24"></div>
+                                            <h2 class="head" data-aos="fade-left" data-aos-duration="1100">La oss ta
+                                                <span>en prat.</span>
+                                            </h2>
+                                        </div>
+                                        <div class="space50"></div>
+                                        <div class="contact-boxarea" data-aos="zoom-in" data-aos-duration="1000">
+                                            <h3>Fra idé til Vellykket</h3>
+                                            <div class="space12"></div>
+                                          
+                                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                              <input type="hidden" name="access_key" value="1d991000-0893-4737-a8cc-2f2a0989551f" />
+                                          
+                                              <div class="row">
+                                                <div class="col-lg-6 col-md-6">
+                                                  <div class="input-area">
+                                                    <input type="text" name="name" placeholder="Navn" required />
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                  <div class="input-area">
+                                                    <input type="email" name="email" placeholder="E-post" required />
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                  <div class="input-area">
+                                                    <input type="tel" name="phone" placeholder="Tlf" required />
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                  <div class="input-area">
+                                                    <input type="text" name="subject" placeholder="Tema" required />
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                  <div class="input-area">
+                                                    <input type="text" name="keywords" placeholder="Nøkkelord (valgfritt)" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                  <div class="input-area">
+                                                    <textarea name="message" placeholder="Melding" required></textarea>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                  <div class="input-area">
+                                                    <button type="submit" class="vl-btn1">Send <img src="assets/img/icons/mail1.svg" alt="" /></button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          
+                                            <div id="formMessage" style="display:none; color:green; margin-top: 1rem;">
+                                              ✅ Takk for meldingen! Vi tar kontakt så snart som mulig.
+                                            </div>
+                                          </div>
+                                          
+                                    </div>
+
+                                    <div class="space60"></div>
+<!--===== LEGAL & COMPANY INFO START =====-->
+<div class="col-lg-12">
+    <div class="company-legal-box p-4 mb-4 rounded-3" style="backdrop-filter: blur(1px); background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #fff;">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-2">Vilkår og betingelser</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="https://www.vellykket.no/abonner/index.php/vilkar-og-betingelser/" class="text-decoration-underline text-light">Les våre vilkår</a></li>
+            <li><a href="https://www.vellykket.no/abonner/index.php/personvern/" class="text-decoration-underline text-light">Personvernerklæring</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="mb-2">Firmainformasjon</h5>
+          <p class="mb-1">Vellykket (Nettcorp)</p>
+          <p class="mb-1">Org.nr: 915 948 138</p>
+          <p class="mb-1">Trelastveien 1</p>
+          <p class="mb-0">1415 Oppegård</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===== LEGAL & COMPANY INFO END =====-->
+  
+
+
+
+                                    <div class="col-lg-12">
+                                        <div class="space50"></div>
+                                        <div class="footer-area">
+                                            <div class="btn-area1">
+                                                <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+                                            </div>
+                                            <p>© {{year}} Vellykket. Alle rettigheter reservert.</p>
+                                            <div class="footer-signature text-center">
+                                                <p>Utviklet med <span class="heart">❤️</span> av <strong>Vellykket-teamet</strong>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== CONTACT AREA ENDS =======-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="custom-model-main" [class.model-open]="isModelOpen">
+    <div class="custom-model-inner">
+        <div class="close-btn" (click)="closeModel()">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="opend-section">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="boxes-area">
+                                        <div class="img1">
+                                            <img src="assets/img/all-images/portfolio/portfolio-img1.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                          
+                                            <a href="javascript:void(0);">Følg med på dine rangeringer i Google – helt automatisk</a>
+                                            <p>For å lykkes med søkemotoroptimalisering er det viktig å vite hvor nettsiden din ligger i søkeresultatene. Med vårt analyseverktøy kan du enkelt holde oversikt over hvilke plasseringer du har på utvalgte søkeord – både nasjonalt og lokalt.
+
+                                                Systemet sjekker rangeringene dine daglig og gir deg oversikt over:
+                                                
+                                                Hvordan du rangerer på utvalgte søkeord i Google
+                                                
+                                                Hvilke sider som presterer best
+                                                
+                                                Utvikling over tid, slik at du ser fremgang eller nedgang
+                                                
+                                                Hvilke søkeord som trenger forbedring
+                                                
+                                                Resultatene vises i et brukervennlig panel, slik at du alltid har kontroll – uten behov for teknisk kunnskap. Du kan følge med på konkrete tall, grafer og endringer – og bruke denne innsikten til å forbedre synligheten din i søk.
+                                                
+                                                Dette er et viktig verktøy for alle som vil ha bedre synlighet i Google, og gir deg en tydelig indikasjon på hvordan din SEO-innsats gir resultater.</p>
+                                                <div class="space20"></div>
+                                            <div class="btn-area1">
+                                                <a href="https://vellykket.no/seo/" class="vl-btn1">Vis live-rangering DEMO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>  
