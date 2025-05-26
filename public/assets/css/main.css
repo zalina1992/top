@@ -20,13 +20,13 @@ h2, p {
   border-color: #f9a600;
 }
 .bg-custom {
-  background-image: url('img/all-images/bg/bg1.png') !important;
+  background-image: url('/img/all-images/bg/bg1.png') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .parallaxie {
-  background-image: url('img/all-images/bg/bg1.png') !important;
+  background-image: url('/img/all-images/bg/bg1.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1336,7 +1336,7 @@ body.light-mode .themed-text {
   position: relative;
   z-index: 1;
   padding: 160px 0 50px;
-  bbackground-image: url('img/all-images/bg/bg1.png');
+  background-image: url('/img/all-images/bg/bg1.png') !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2742,7 +2742,7 @@ body.light-mode .themed-text {
   12px 0 0;
 }
 body {
-  background-image: url('img/all-images/bg/bg1.png') !important;
+  background-image: url('/img/all-images/bg/bg1.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2750,7 +2750,7 @@ body {
 }
 
 .parallaxie {
-  background-image: url('img/all-images/bg/bg1.png') !important;
+  background-image: url('/img/all-images/bg/bg1.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
