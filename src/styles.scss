@@ -21,8 +21,17 @@ body {
     background-size: auto;
     background-position: top left;
   }
-  .light-mode .main-hero-area {
+/* ===== LIGHT THEME - BG FIX ===== */
+.light-mode body {
   background-color: #ffffff !important;
-  background-image: url('/assets/img/all-images/bg/bg2.png');
-  color: #000;
+  background-image: none !important;
+  color: var(--ztc-text-text-1); /* ciemny tekst */
+}
+
+.light-mode .parallaxie {
+  background-color: #ffffff !important;
+  background-image: url('/assets/img/all-images/bg/bg2.png'); /* możesz zmienić na jaśniejsze tło */
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
 }
