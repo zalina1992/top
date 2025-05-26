@@ -21,3 +21,8 @@ body {
     background-size: auto;
     background-position: top left;
   }
+  .light-mode .main-hero-area {
+  background-color: #ffffff !important;
+  background-image: url('/assets/img/all-images/bg/bg2.png');
+  color: #000;
+}
