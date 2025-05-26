@@ -2492,6 +2492,14 @@ body.light-mode .themed-text {
   z-index: 1;
   padding: 160px 0 50px;
 }
+body {
+  background-color: #061D1E;
+  background-image: url('/assets/img/all-images/bg/bg1.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
 .main-hero-area4 video {
   position: fixed;
   top: 0;
