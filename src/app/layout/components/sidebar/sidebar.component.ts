@@ -2,13 +2,14 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { GsapRevealDirective } from '../../../directives/gsap-reveal.directive';
 import { CommonModule } from '@angular/common';
-import { ClassManagerService } from '../../../services/classmanaer.service';
+import { ClassManagerService } from '../../../services/classmanager.service';
 import { ScrollToModule, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 import aos from 'aos';
 import { CounterDirective } from '../../../directives/counter.directive';
 
 @Component({
   selector: 'app-sidebar',
+  standalone: true,
   imports: [
     GsapRevealDirective,
     CounterDirective,
@@ -89,7 +90,7 @@ export class SidebarComponent {
 
   ngOnInit() {
     aos.init();
-    this.ensureParallaxieClass();
+    this.classManager.setClass('parallaxie');
   }
 
   openModel() {
@@ -138,23 +139,13 @@ export class SidebarComponent {
       const blogSection = document.getElementById('list-item-7');
       if (blogSection) {
         const rect = blogSection.getBoundingClientRect();
-        const isAboveView = rect.bottom < 0;
-        const isBelowView = rect.top > window.innerHeight;
+        const isAbove = rect.bottom < 0;
+        const isBelow = rect.top > window.innerHeight;
 
-        // 🔁 Scroll only if blog section is off-screen (above or below)
-        if (isAboveView || isBelowView) {
+        if (isAbove || isBelow) {
           blogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
-
-      this.ensureParallaxieClass();
-    }
-  }
-
-  private ensureParallaxieClass(): void {
-    const element = document.querySelector('.parallaxie');
-    if (element && !element.classList.contains('parallaxie')) {
-      element.classList.add('parallaxie');
     }
   }
 }

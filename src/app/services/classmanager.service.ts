@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ClassManagerService {
-  private currentClass: string = '';
+  private currentClass: string = 'parallaxie';
 
-  setClass(className: string) {
+  setClass(className: string): void {
     this.currentClass = className;
   }
 

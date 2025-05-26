@@ -19,7 +19,20 @@ h2, p {
   background-color: #f9a600 !important;
   border-color: #f9a600;
 }
+.parallaxie {
+  background-image: url('/assets/img/all-images/bg/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 .pagination .page-item.active .page-link {
+  background-color: #f9a600 !important;
+  border-color: #f9a600 !important;
+  color: #fff !important;
+}
+
+.pagination .page-link:hover {
   background-color: #f9a600 !important;
   border-color: #f9a600;
   color: #fff;

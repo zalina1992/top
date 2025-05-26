@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClassManagerService } from '../../services/classmanaer.service';
+import { ClassManagerService } from '../../services/classmanager.service';
 @Component({
   selector: 'app-index4',
   imports: [],
