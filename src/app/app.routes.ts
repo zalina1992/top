@@ -10,38 +10,37 @@ import { BlogSingle5Component } from './blog-single5/blog-single5.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '',
-    pathMatch: 'full',
-  },
-  {
-    path: '',
     component: LayoutComponent,
-    loadChildren: () =>
-      import('./views/views.route').then((mod) => mod.VIEWS_ROUTE),
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./views/views.route').then((mod) => mod.VIEWS_ROUTE),
+      },
+      {
+        path: 'sokemotoroptimalisering-effektivt-seo-oslo',
+        component: BlogSingleComponent,
+      },
+      {
+        path: 'seo-nettside-for-bedrifter',
+        component: BlogSingle2Component,
+      },
+      {
+        path: 'hvordan-bruke-sokeord-i-2025',
+        component: BlogSingle3Component,
+      },
+      {
+        path: 'seo-norge-2025',
+        component: BlogSingle4Component,
+      },
+      {
+        path: 'seo-sokemotoroptimalisering-effektivt',
+        component: BlogSingle5Component,
+      }
+    ]
   },
   {
     path: 'preview',
     component: PreviewComponent,
   },
-  // SEO-friendly blog routes:
-  {
-    path: 'sokemotoroptimalisering-effektivt-seo-oslo',
-    component: BlogSingleComponent,
-  },
-  {
-    path: 'seo-nettside-for-bedrifter',
-    component: BlogSingle2Component,
-  },
-  {
-    path: 'hvordan-bruke-sokeord-i-2025',
-    component: BlogSingle3Component,
-  },
-  {
-    path: 'seo-norge-2025',
-    component: BlogSingle4Component,
-  },
-  {
-    path: 'seo-sokemotoroptimalisering-effektivt',
-    component: BlogSingle5Component,
-  }
 ];

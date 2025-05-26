@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ClassManagerService {
-  private currentClass: string = 'parallaxie';
+  private currentClass: string = 'parallaxie bg-custom'; // <-- dodaj klasę z tłem domyślnie
 
-  setClass(className: string): void {
+  setClass(className: string) {
     this.currentClass = className;
   }
 

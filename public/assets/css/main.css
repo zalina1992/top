@@ -19,8 +19,14 @@ h2, p {
   background-color: #f9a600 !important;
   border-color: #f9a600;
 }
+.bg-custom {
+  background-image: url('/assets/img/all-images/bg/bg1.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .parallaxie {
-  background-image: url('/assets/img/all-images/bg/bg1.png');
+  background-image: url('/assets/img/all-images/bg/bg1.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2733,6 +2739,13 @@ body.light-mode .themed-text {
   transition: all 0.4s;
   border: 1px solid var(--ztc-border-border-3);
   margin: 0 12px 0 0;
+}
+.parallaxie {
+  background-image: url('/assets/img/all-images/bg/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .main-hero-area4 .personal-contact-box ul li a img {
   transition: all 0.4s;
