@@ -10,16 +10,18 @@
 body {
     background-color: #061D1E;
     background-image: url('/assets/img/all-images/bg/bg1.png');
-    background-repeat: repeat;
-    background-size: auto;
-    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
   }
   .parallaxie {
     background-color: #061D1E;
     background-image: url('/assets/img/all-images/bg/bg1.png');
-    background-repeat: repeat;
-    background-size: auto;
-    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
   }
 /* ===== LIGHT THEME - BG FIX ===== */
 .light-mode body {
@@ -31,7 +33,8 @@ body {
 .light-mode .parallaxie {
   background-color: #ffffff !important;
   background-image: url('/assets/img/all-images/bg/bg2.png'); /* możesz zmienić na jaśniejsze tło */
-  background-repeat: repeat;
-  background-size: auto;
-  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
 }
