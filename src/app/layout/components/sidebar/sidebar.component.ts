@@ -1,4 +1,4 @@
-import { Component, HostListener, Renderer2 } from '@angular/core';
+import { Component, HostListener, Renderer2, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { GsapRevealDirective } from '../../../directives/gsap-reveal.directive';
 import { CommonModule } from '@angular/common';
@@ -22,7 +22,7 @@ import { CounterDirective } from '../../../directives/counter.directive';
   styles: ``,
   providers: [ScrollToService],
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit {
   currentSection = 'list-item-1';
   year = new Date().getFullYear();
   isModelOpen: boolean = false;
@@ -85,7 +85,8 @@ export class SidebarComponent {
 
   constructor(
     private renderer: Renderer2,
-    public classManager: ClassManagerService
+    public classManager: ClassManagerService,
+    private scrollToService: ScrollToService
   ) {}
 
   ngOnInit() {
@@ -135,7 +136,14 @@ export class SidebarComponent {
   changePage(page: number) {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
-      // Nie przewijaj do żadnej sekcji – po prostu załaduj nowe posty.
+
+      // Smooth scroll to top of blog section
+      setTimeout(() => {
+        const element = document.getElementById('list-item-7');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   }
 }
